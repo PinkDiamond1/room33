@@ -19,6 +19,15 @@
   color: white;
 }
 
+.background-image {
+  background-image: url("./test_gif.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
 .App-link {
   color: #61dafb;
 }
