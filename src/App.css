@@ -5,11 +5,28 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  opacity: 0.9;
+}
+
+.text-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  opacity: 1;
+}
+
+.text-logo > img {
+  height: 40px;
+    opacity: 0.9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
 }
 
 
 .App-header {
-  background-color: black;
+  background-color: #090918;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +40,7 @@
   background-image: url("./test_gif.gif");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 85% auto;
   position: relative;
   background-attachment: fixed;
 }
