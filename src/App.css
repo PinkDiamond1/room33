@@ -1,19 +1,19 @@
 .App {
   text-align: center;
-  filter: invert(100%);
+  /*filter: invert(100%);*/
 }
 
-.App-logo {
+.room-logo {
   height: 40vmin;
-  pointer-events: none;
   opacity: 0.9;
+  margin-top: -40px;
+  cursor: pointer;
 }
 
 .text-logo {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 4;
   opacity: 1;
 }
 
@@ -22,9 +22,30 @@
     opacity: 0.9;
     padding: 20px;
     margin: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     border-radius: 12px;
 }
 
+.text-instructions {
+  position: absolute;
+  color: white;
+  width: 255px;
+  opacity: 0.8;
+  padding: 20px;
+  margin: 10px;
+  color: #ffbe2e;
+  color: black;
+  color: #090918;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: crosshair;
+}
+
+.text-instructions::selection, .text-logo > img::selection, .room-logo::selection {
+  background: white; /* WebKit/Blink Browsers */
+}
 
 .App-header {
   background-color: #090918;
@@ -41,20 +62,22 @@
   background-image: url("./test_gif.gif");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 85% auto;
+  background-size: cover;
+  /**background-size: 85% auto;**/
   position: relative;
   background-attachment: fixed;
 }
 
-.App-link {
-  color: #61dafb;
+.enter-subtitles {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 3px 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
