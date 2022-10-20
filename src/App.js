@@ -34,7 +34,11 @@ function App() {
           <img style={{height: "30px", marginLeft: "5px"}} src={alchemistLogo} alt="text" />
         </div>
       </div>
-      <div className="text-instructions">make a circle out of man and woman and draw a traingle on it, and out of a triangle, make again a circle and so you will have your Philosophers Stone</div>
+      <div className="text-instructions">
+        <div>
+        Make of a man and woman a circle; then a quadrangle; out of this a triangle; make again a circle, and you will have the Stone of the Wise.
+        </div>
+      </div>
       <div className="enter-subtitles" style={{display: enterRoomStyle.display}}>coming soon</div>
     </div>
   );

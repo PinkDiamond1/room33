@@ -36,6 +36,32 @@
   align-items: center;
 }
 
+.text-instructions {
+  position: absolute;
+  padding: 20px;
+  margin: 10px;
+  color: #090918;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ffbe2e;
+}
+
+.text-instructions > div {
+  width: 255px;
+  opacity: 0.05;
+  cursor: crosshair;
+}
+
+.text-instructions > div::hover {
+  opacity: 0.8;
+}
+
+.text-instructions > div::selection, .text-logo > img::selection, .room-logo::selection {
+  background: white; /* WebKit/Blink Browsers */
+  opacity: 0.8;
+}
+
 @media (max-width: 480px) {
   .text-logo {
     width: 100%;
@@ -55,27 +81,15 @@
     align-items: center;
     justify-content: center;
   }
-}
-
-.text-instructions {
-  position: absolute;
-  color: white;
-  width: 255px;
-  opacity: 0.8;
-  padding: 20px;
-  margin: 10px;
-  color: #ffbe2e;
-  color: black;
-  color: #090918;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  cursor: crosshair;
-  
-}
-
-.text-instructions::selection, .text-logo > img::selection, .room-logo::selection {
-  background: white; /* WebKit/Blink Browsers */
+  .text-instructions {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .App-header {
